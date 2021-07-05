@@ -15,15 +15,15 @@ CBaz baz;
 __attribute__((constructor)) void ctor()
 {
 	static CFoo foo;
-    printf( "dll constructor\n" );
+	printf( "dll constructor\n" );
 }
 
 __attribute__((destructor)) void dtor()
 {
-    printf( "dll destructor\n" );
+	printf( "dll destructor\n" );
 }
 
 void foo()
 {
-    printf( "foo\n" );
+	printf( "foo\n" );
 }
